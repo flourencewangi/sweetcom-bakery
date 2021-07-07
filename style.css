@@ -1,30 +1,54 @@
 *{
-  padding: 0;
   margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.menu-bar{
-  background: rgb(red, green, blue);
-  text-align: center;
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0, 0,0,0.0), white), url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.menu-bar ul{
-  display: inline-flex;
-  list-style: none;
-  color: lavenderblush;
+
+form{
+  width:90%;
+  max-width: 600px;
 }
-.menu-bar ul li{
-  width:100px;
-  margin: 10px;
-  padding:5px;
+.input-group{
+  margin-bottom: 30px;
+  position: relative;
 }
-.menu-bar ur li a{
-  text-decoration: none;
-  color: violet;
+input,textarea{
+  width: 100%;
+  padding: 10px;
+  outline:0;
+  border: 1px solid black;
+  color: black;
+  background: transparent;
+  font-size: 10px;
 }
-.active,.menu-bar ul li:hover
-{
-  background-color: violet;
-border-radius: 3px;
+
+label{
+  height: 100%;
+  position: absolute;
+  left:0;
+  top: 0;
+  padding: 10px;
+  color: black;
+  cursor: text;
+  
 }
-.menu-bar.fa{
-  margin-left: 5px;
+button{
+  padding: 10px 0;
+  color: black;
+  outline: none;
+  background: transparent;
+  border: 1px solid black;
+  width: 100px;
+  cursor: pointer;
+  align-items: center;
 }
