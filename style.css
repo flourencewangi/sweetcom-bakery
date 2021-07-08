@@ -22,7 +22,8 @@ form{
   margin-bottom: 30px;
   position: relative;
 }
-input,textarea{
+input,textarea
+{
   width: 100%;
   padding: 10px;
   outline:0;
@@ -51,4 +52,45 @@ button{
   width: 100px;
   cursor: pointer;
   align-items: center;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+  top: -35px;
+  font-size: 14px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row,.input-group{
+flex-basis:48%;
+}
+.menu-bar{
+  background: rgb(red, green, blue);
+  text-align: center;
+}
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+  color: lavenderblush;
+}
+.menu-bar ul li{
+  width:100px;
+  margin: 10px;
+  padding:5px;
+}
+.menu-bar ur li a{
+  text-decoration: none;
+  color: violet;
+}
+.active,.menu-bar ul li:hover
+{
+  background-color: violet;
+border-radius: 3px;
+}
+.menu-bar.fa{
+  margin-left: 5px;
 }
