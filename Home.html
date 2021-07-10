@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sweetcom bakery</title>
+    <style>
+      .content{
+        grid-area: content;
+        background: url(1.jpg);
+      }
+      .side bar{
+        grid-area: side bar;
+        background: linear-gradient(to right);
+        justify-content: center;
+      }
+      .footer{
+        grid-area: footer;
+        background: white;
+      }
+      .container{
+        font-size: 1.5em;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+        "sidebar"
+        "content"
+        "footer"
+        grid-template -columns:1fr;
+        grid-template -rows:130px 800px 250px;
+      }
+      .content,.side-bar,.footer{
+        padding: 10px;
+      }
+    </style></head>
+
+<body>
+<div class="container">
+  <div class="side bar">
+    <nav>
+      <ul>
+        <li><a href="Aboutus.html">About us</a></li>
+        <li><a href="form.html">contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content">
+    <section class="hero">
+      <img src="Flo.jpg">
+      <div class="hero-content">
+        <h1>SWEETCOM BAKERY<br>
+        Welcome to Sweetcom Bakery</h1>
+      
+      <p>
+        Always the best
+        Come order with us for the best
+      </p>
+    
+      <a class="action-btn" href="Aboutus.html"></a>
+        <a class="action-btn" href="Aboutus.html"></a>
+      </div>
+    </section>
+  </div>
+  <div class="footer">
+    <footer>
+      <ul>
+        <li><a href="Aboutus.html"></li>
+          <li><a href="Aboutus.html"></li>
+          <li><a href="Aboutus.html"></li>
+          <li><a href="Aboutus.html"></li>
+      </ul>
+      </footer>
+  </div>
+</div>
+</body>
+
+</html>
