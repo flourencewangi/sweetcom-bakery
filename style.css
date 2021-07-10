@@ -6,7 +6,7 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background-image:linear-gradient(rgba(0, 0,0,0.0), white), url(1.jpg);
+  background-image:linear-gradient(rgba(0, 0,0,0.0), white), url(0.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -58,7 +58,7 @@ input:valid~label,
 textarea:focus~label,
 textarea:valid~label{
   top: -35px;
-  font-size: 14px;
+  font-size: 10px;
 }
 .row{
   display: flex;
@@ -70,7 +70,8 @@ flex-basis:48%;
 }
 .menu-bar{
   background: rgb(red, green, blue);
-  text-align: center;
+  text-align: right;
+  
 }
 .menu-bar ul{
   display: inline-flex;
@@ -79,18 +80,37 @@ flex-basis:48%;
 }
 .menu-bar ul li{
   width:100px;
-  margin: 10px;
-  padding:5px;
+  margin: 1px;
+  padding:10px;
 }
 .menu-bar ur li a{
   text-decoration: none;
-  color: violet;
+  color: white;
 }
 .active,.menu-bar ul li:hover
 {
   background-color: violet;
-border-radius: 3px;
+border-radius: 1px;
 }
 .menu-bar.fa{
   margin-left: 5px;
+}
+@media(max-width:100px){
+body{
+  flex-direction: row;
+}
+}
+@media(max-width:350px){
+  body{
+    flex-direction: column;
+  }
+  .menu-bar{
+    font-size: 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+img{
+  max-width: 100%;
+  width: 100%
 }
