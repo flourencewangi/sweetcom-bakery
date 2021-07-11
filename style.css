@@ -71,7 +71,7 @@ flex-basis:48%;
 .menu-bar{
   background: rgb(red, green, blue);
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
 }
 .menu-bar ul{
   display: inline-flex;
