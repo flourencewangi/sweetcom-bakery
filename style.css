@@ -71,7 +71,7 @@ flex-basis:48%;
 .menu-bar{
   background: rgb(red, green, blue);
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
 }
 .menu-bar ul{
   display: inline-flex;
@@ -79,9 +79,9 @@ flex-basis:48%;
   color: lavenderblush;
 }
 .menu-bar ul li{
-  width:130px;
-  margin: 1px;
-  padding:10px;
+  width:40px;
+  margin: 5px;
+  padding:1px;
 }
 .menu-bar ur li a{
   text-decoration: none;
@@ -93,7 +93,7 @@ flex-basis:48%;
 border-radius: 1px;
 }
 .menu-bar.fa{
-  margin-left: 5px;
+  margin-right: 5px;
 }
 @media(max-width:100px){
 body{
