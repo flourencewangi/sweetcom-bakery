@@ -5,75 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>sweetcom bakery</title>
-    <style>
-      .content{
-        grid-area: content;
-        background: url(1.jpg);
-      }
-      .side bar{
-        grid-area: side bar;
-        background: linear-gradient(to right);
-        justify-content: center;
-      }
-      .footer{
-        grid-area: footer;
-        background: white;
-      }
-      .container{
-        font-size: 1.5em;
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-areas:
-        "sidebar"
-        "content"
-        "footer"
-        grid-template -columns:1fr;
-        grid-template -rows:130px 800px 250px;
-      }
-      .content,.side-bar,.footer{
-        padding: 10px;
-      }
-    </style></head>
-
-<body>
-<div class="container">
-  <div class="side bar">
-    <nav>
-      <ul>
-        <li><a href="Aboutus.html">About us</a></li>
-        <li><a href="form.html">contact us</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="content">
-    <section class="hero">
-      <img src="Flo.jpg">
-      <div class="hero-content">
-        <h1>SWEETCOM BAKERY<br>
-        Welcome to Sweetcom Bakery</h1>
-      
-      <p>
-        Always the best
-        Come order with us for the best
-      </p>
     
-      <a class="action-btn" href="Aboutus.html"></a>
-        <a class="action-btn" href="Aboutus.html"></a>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+       <script src="https://kit.fontawesome.com/ea566e39d9.js" crossorigin="anonymous"></script> 
+    
+</head>
+    <body>
+      <div class="container">
+        <div class="navbar">
+          <img src="Flo.jpg" class="logo" alt="flo" />
+          <nav>
+            <ul id="menulist">
+              
+                   <a href="index.html">
+                     <i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                   <li>
+                     <a href="form.html">
+                       <i class="fas fa-users"></i>
+                       contact us </a>
+                   </li>
+                   <li>
+                     <a href "https://flourencewangi.github.io/sweetcom-bakery/
+                  ">website
+                     </a></li>
+                   <li><a href="www.facebook.com">
+                       <i class=" fab fa-facebook"></i></a>
+                   </li>
+            </ul>
+          </nav>
+            <img src="1.jpg" class="menu-icon" onclick="togglemenu()">
+        </div>
       </div>
-    </section>
-  </div>
-  <div class="footer">
-    <footer>
-      <ul>
-        <li><a href="Aboutus.html"></li>
-          <li><a href="Aboutus.html"></li>
-          <li><a href="Aboutus.html"></li>
-          <li><a href="Aboutus.html"></li>
-      </ul>
-      </footer>
-  </div>
-</div>
+      <div class="row">
+        <div class="col-1">
+          <h2>Welcome to sweet come bakery<b>Feel free to check out your favourite</h2>
+          <h3>
+            we are located at;
+          </h3>
+          <p>Kireka hill off Kabakas Rod
+          </p>
+          <h4>Taste it love it<b>
+            Feel the greatness
+          </h4>
+        </div>
+        
+      </div>
+      <div class="col-2">
+        <img src="23.jpg" class="controller" />
+      </div>
+      <div class="color-box"></div>
+      <div class="add-btn">
+        <img src="14.jpg"><p><small>Add to cart</small></p>
+      </div>
+      <div class="social-links">
+        
+             <a href="facebook.com">
+           <i class=" fab fa-facebook"></i>
+       </a></li>
+    <li>
+      <a href="twitter">
+   <i class="fab fa-twitter"></i>
+         </a>
+    </li>
+    <li>
+    <a href "https://flourencewangi.github.io/sweetcom-bakery/
+    "><i class="fas fa-globe"></i>
+    </a></li>
+    <li><a href="www.instagram.com">
+  <i class="fab fa-instagram-square"></i> 
+</a></li>
+    </ul>
+    </div>
+    </div>
+    
+    <script>
+      var menulist=document.getElementById('menulist')
+      menulist.style.maxHeight='0px'
+      function togglemenu(){
+        if(menulist.style.maxHeight=='0px')
+      }
+      else{
+        menulist.style.maxHeight='0px';
+      }
+    </script>
 </body>
 
 </html>
