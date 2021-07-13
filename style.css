@@ -193,12 +193,13 @@ button:hover{
   cursor: pointer;
 }
 .social-links{
-  text-align: center;
+  text-align: right;
   height: 13px;
   margin: 20px;
   cursor:pointer;
   list-style: none;
   display: inline-flex;
+  padding: 10px;
 }
 @media only screen and(max-width:700px){
   nav ul{
