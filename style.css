@@ -249,3 +249,7 @@ button:hover{
     font-size: 15px;
   }
 }
+.pos{
+  position: relative;
+  text-align: absolute;
+}
