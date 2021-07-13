@@ -43,16 +43,6 @@ label{
   cursor: text;
   
 }
-button{
-  padding: 10px 0;
-  color: black;
-  outline: none;
-  background: transparent;
-  border: 1px solid black;
-  width: 100px;
-  cursor: pointer;
-  align-items: center;
-}
 input:focus~label,
 input:valid~label,
 textarea:focus~label,
@@ -67,49 +57,7 @@ textarea:valid~label{
 }
 .row,.input-group{
 flex-basis:48%;
-}
-.menu-bar{
-  background: rgb(red, green, blue);
-  text-align: center;
-  font-size: 50px;
-}
-.menu-bar ul{
-  display: inline-flex;
-  list-style: none;
-  color: lavenderblush;
-}
-.menu-bar ul li{
-  width:40px;
-  margin: 5px;
-  padding:1px;
-}
-.menu-bar ur li a{
-  text-decoration: none;
-  color: white;
-}
-.active,.menu-bar ul li:hover
-{
-  background-color: violet;
-border-radius: 1px;
-}
-.menu-bar.fa{
-  margin-right: 5px;
-}
-@media(max-width:100px){
-body{
-  flex-direction: row;
-}
-}
-@media(max-width:350px){
-  body{
-    flex-direction: column;
   }
-  .menu-bar{
-    font-size: 1px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
 img{
   max-width: 100%;
   width: 100%
