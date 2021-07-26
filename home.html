@@ -20,23 +20,23 @@
     <a href="index.html"><img src="Flo.jpg">
     </a>
     <div class="nav-links" id="navLinks">
-      <i class="fa fa-window-close" onclick="hideMenu"></i>
-      
+     <font color="cyan"> <font size="+2px"><i class="fa fa-window-close" onclick="hideMenu()"></i></font>
+      </font>
 <ul>
       <li> <a href="index.html">Home <i class="fa fa-home" aria-hidden="true"></i> </a></li>
   <li><a href="gallery.html">
   products  <i class="fas fa-shopping-cart"></i>
   </a>
-   </li>
+   </li><li>
       <a href="home.html">
 About us
 <i class="fas fa-address-card"></i>
 </a></li>
  <li>
   <a href="form.html">  orders  <i class="fas fa-cart-plus"></i> </a> </li>
-</ul>
-    </div>
-<i class="fas fa-bars" onclick="showMenu()"></i>
+</ul></div>
+<font color="cyan"><font size="+20px"><i class="fas fa-bars" onclick="showMenu()"></i>
+</font></font>
   </nav>
 
   <div class="text-box">
@@ -180,22 +180,26 @@ We also offer a wide range of continental and Italian dishes.</p>
     <h4>About Us</h4>
     <p>Come to sweetcom bakery ,and feel the refreshment</p>
     <div class="icons">
-           <i class=" fab fa-facebook"></i>
+         <font size="+3">  <i class=" fab fa-facebook"></i>
    <i class="fab fa-twitter"></i>
     <a href "https://flourencewangi.github.io/sweetcom-bakery/
     "><i class="fas fa-globe"></i>
   <i class="fab fa-instagram-square"></i> 
-    </div>
-    Made with<i class="fas fa-heart"></i>
+    </font></div>
+    Made with<font color="red" size="+5"><i class="fas fa-heart"></i></font>
     and greatness
     </section>
-    
+    <!.....Javascript for toggle menu....!>
       <script>
-  var navLinks=document.getElementById("navLinks");
+  var navLinks = document.getElementById("navLinks");
   function showMenu(){
-  navLinks.style.right="0";}
+  navLinks.style.right="0";
+    
+  }
   function hideMenu(){
-  navLinks.style.right="200px";}
+  navLinks.style.right="-200px";
+    
+  }
   </script>
 </body>
 </html>
