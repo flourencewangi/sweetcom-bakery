@@ -103,13 +103,13 @@ img{
 }
 .col-1 h3{
   font-size: 30px;
-  color: #707070;
+  color: solid;
   font-weight: 100;
   margin: 20px 0 10px;
 }
 .col-1 p{
-  font-size: 16px;
-  color: #b7b7b7;
+  font-size: 20px;
+  color: blueviolet;
   font-weight: 100;
 }
 .col-1 h4{
