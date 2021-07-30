@@ -164,7 +164,49 @@
  .fas fa-heart{
     color: red;
   }
-         
+               #slider figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+      }
+      #slider figure img{
+        width: 20%;
+        float:left;
+      }
+      @keyframes slider{
+        0%{
+          left:0;
+        }
+      20%{
+      left:0;
+      }
+      25%{
+      left:100%;
+      }
+      
+      45%{
+      left:-100%;
+      }
+      
+      50%{
+      left:-200%;
+      }
+      
+      70%{
+      left:-200%;
+      }
+      75%{
+      left:-300%;
+      }
+      95%{
+      left:-300%;
+      }
+      100%{
+      left:-400%;
+      }
+      }
        </style>
     
 </head>
@@ -222,16 +264,23 @@
           <h4><font color="red">Taste it love it<b>
             Feel the greatness
           </h4></font>
+          </div>
+          </div><a href="form.html"><button type="button">Order Now</button>
+            <i class="fas fa-cart-plus"></i>
+          </a><br>
         
-        
-        
-        </div>
-      </div><a href="form.html"><button type="button">Order Now</button> 
-      <i class="fas fa-cart-plus"></i>
-      </a>
-      <div class="col-2">
-        <img src="23.jpg" class="controller" />
-      </div><br><br><br><br>
+       <div id="slider">
+    <figure>
+
+      <img src="23.jpg">
+       <img src="cake.jpg">
+      <img src="N.jpg">
+     <img src="b.jpg">
+     <img src="c.jpg">
+    </figure>
+  </div>
+
+      
       <!.......footer....>
 
   <section class="footer">
