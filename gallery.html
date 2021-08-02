@@ -4,138 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sweetcom products</title>
+    <title>products</title>
     <style>
-body,# slide,.wrap,.slide-content{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
-}
-.wrap{
-  position: relative;
-}
-.slide{
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.slide1{
-background-image: url("a.jpg");
-}
-.slide2{
-background-image: url("b.jpg");
-}
-
-.slide3{
-background-image: url("c.jpg");
-}
-.slide-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.slide-content span{
-  font-size: 5rem;
-  color: #fff;
-}
-.arrow{
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-# arrow-left{
-  border-width: 30px 40px 30px 0;
-  border-color: transparent #fff transparent transparent;
-  left: 0;
-  margin-left: 30px;
-}
-
-# arrow-right{
-  border-width: 30px 0 30px 40px;
-  border-color: transparent  transparent transparent #fff;
-  right: 0;
-  margin-right: 30px;
-}
-
-
-    </style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f2f2f2;
+    }
+    .imgslider{
+      width: 1000px;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 500px;
+      background: #222;
+      display: flex;
+    }
+    .content{
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #fff;
+      font-family: sans-serif;
+      padding: 25px;
+      position: relative;
+    }
+    .content h1{
+      font-size: 54px;
+      letter-spacing: 2px;
+      color: #333;
+    }
+    .content p{
+      color: #777;
+      margin: 15px 0px 30px;
+    }
+    .content button{
+      padding: 15px 40px;
+      border: 0;
+      outline: none;
+      background: #333;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 10px 10px rgb(0, 0, 0,0.2);
+      color: #fff;
+    }
+    ul{
+      position: absolute;
+      bottom: 30px;
+    }
+    ul li{
+      list-style: none;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      background: #bfbfbf;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    ul .active{
+      background: #333;
+    }
+    .imgs{
+      flex-basis: 50%;
+      background: #333;
+    }
+    .imgs img{
+      width: 100%;
+      object-fit: cover;
+    }
+    .zoom{
+      animation: zoom-out 0.5s linear 1;
+    }
+    @keyframes zoom-out{
+      0%{
+        transform: scale(1.2);
+      }
+      100%{
+        transform: scale(1);
+      }
+    }
+    @media(max-width:768px)
+    {
+      .imgslider{
+        flex-direction: column;
+        margin: 0 15px;
+        height: 700px;
+      }
+    }
+   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div id="arrow-left" class="arrow"></div>
-    <div id="slide">
-      <div class=" slide1">
-        <div class="slide-content">
-          <span>Image one</span>
-  </div>
-      </div>
-        <div class="slide2">
-          <div class="slide-content">
-            <span>Image two</span>
-          </div>
-        </div>
-
-  <div class="slide3">
-    <div class="slide-content">
-      <span>Image three</span>
+  <div class="container">
+    <div class="imgslider">
+    <div class="content">
+      <h1>Cup cake</h1>
+      <p>best of the best we hope to see you soon ,come order with us your best ,test the difference</p>
+      <p>
+        <button>Explore Now</button>
+      </p>
+      <ul>
+      <li class="btn active"></li>
+      <li class="btn"></li>
+      <li class="btn"></li>
+      </ul>
+    </div>
+    <div class="imgs">
+      <img src="G.jpg">
     </div>
   </div>
-    </div>
-    <div id="arrow-right" class="arrow"></div>
-    <script>
-      let sliderImage=document.querySelectorAll('.slide'),
-arrowLeft=document.querySelector('# arrow-left '),
-      arrowRight=document.querySelectorAll('# arrow-left'),
-      current=0;
-      function reset(){
-        for(let i=0;i<sliderImages.length;i++){
-          sliderImages[i].style.display='none';
-        }
-      }
-      function startSlide(){
-        reset(
-          sliderImages[0].style.display='block'})
-          function slideLeft(){
-            reset();
-            sliderImages[current-1].style.display='block';
-            current--;
-          }
-          
-          function slideRight(){
-            reset();
-            sliderImages[current+1].style.display='block';
-            current++;
-          }
-          arrowLeft.addEventListener('click',function(){
-            if(current===0){
-              current=sliderImages.length;
-            }
-            slideLeft();
-          }
-          )
-          
-        
-        arrowLeft.addEventListener('click',function(){
-        if(current===
-        current=sliderImages.length;
-       -1 ){current=-1
-        slideRight();
-        }
-        )
-          
-      
-    </script>
- 
-</body>
+  </div>
+  <script type="text/javascript">
+ const btn=documen.getElementsByClassName('btn');
+  banner=document.getElementById('banner');
+  btn[0]·onclick=function(){
+  }
+  banner.src='G.jpg';
+  animation()
+  this.classlist.add('active');
+  }
+  btn[1]·onclick=function(){
+  }
+  banner.src='H.jpg';
+  animation()
+  this.classlist.add('active');
+  }
+  btn[2]·onclick=function(){
+  }
+  banner.src='J.JPG';
+  animation()
+  this.classlist.add('active');
+  }
+  
+  </script>
+  </body>
 
 </html>
