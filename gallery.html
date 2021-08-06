@@ -7,145 +7,180 @@
     <title>products</title>
     <style>
     *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'poppins',sans-serif;
     }
     .container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: #f2f2f2;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      margin:40px 20px 0 20px;
     }
-    .imgslider{
-      width: 1000px;
-      border-radius: 5px;
-      overflow: hidden;
-      height: 500px;
-      background: #222;
-      display: flex;
+    .container .heading{
+      width: 50%;
+      padding-bottom: 50px;
+      
     }
-    .content{
-      flex-basis: 50%;
+    .container .heading h3{
+      font-size:3em;
+      font-weight:bolder;
+      padding-bottom: 10px;
+      border-bottom:3px solid #222;
+    }
+    .container .heading h3 span{
+      font-weight:100;
+    }
+    .container .box{
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .container .box .dream{
+      display: flex;
       flex-direction: column;
-      background: #fff;
-      font-family: sans-serif;
-      padding: 25px;
-      position: relative;
+      width:32.5%;
     }
-    .content h1{
-      font-size: 54px;
-      letter-spacing: 2px;
-      color: #333;
-    }
-    .content p{
-      color: #777;
-      margin: 15px 0px 30px;
-    }
-    .content button{
-      padding: 15px 40px;
-      border: 0;
-      outline: none;
-      background: #333;
-      border-radius: 25px;
-      font-size: 14px;
-      cursor: pointer;
-      box-shadow: 0 10px 10px rgb(0, 0, 0,0.2);
-      color: #fff;
-    }
-    ul{
-      position: absolute;
-      bottom: 30px;
-    }
-    ul li{
-      list-style: none;
-      width: 15px;
-      height: 15px;
-      display: inline-block;
-      background: #bfbfbf;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    ul .active{
-      background: #333;
-    }
-    .imgs{
-      flex-basis: 50%;
-      background: #333;
-    }
-    .imgs img{
+    .container .box .dream img{
       width: 100%;
-      object-fit: cover;
+      padding-bottom: 15px;
+      border-radius: 5px;
+      
     }
-    .zoom{
-      animation: zoom-out 0.5s linear 1;
+    .container .btn{
+      margin: 40px 0 70px 0;
+      background:#222;
+      padding: 15px 40px;
+      border-radius: 5px;
     }
-    @keyframes zoom-out{
-      0%{
-        transform: scale(1.2);
-      }
-      100%{
-        transform: scale(1);
-      }
+    .container .btn a{
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: bolder;
+      letter-spacing: 3px;
     }
-    @media(max-width:768px)
-    {
-      .imgslider{
+    a{
+      text-decoration: none;
+    }
+    nav ul li{
+      color: navy;
+      display: inline;
+justify-content: space-evenly;
+      padding-left: 10px;
+    }
+    .footer .icons{
+      display: inline;
+      padding: 10px;
+      justify-content: space-around;
+     
+      nav ul li a::after{
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+    @media only screen and(max-width: 700px){
+      .container .box{
         flex-direction: column;
-        margin: 0 15px;
-        height: 700px;
+      }
+      .container .box .dream{
+        width: 100%;
+      }
+      nav ul li{
+      display: inline;
+      align-content: right;
+      padding-left: 50px;
       }
     }
-   </style>
+    
+        @media only screen and(max-width: 380px){
+        .container .heading{
+        width: 100%;
+        }
+        .container .heading h3{
+  font-size: 1em;
+        }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/ea566e39d9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="container">
-    <div class="imgslider">
-    <div class="content">
-      <h1>Cup cake</h1>
-      <p>best of the best we hope to see you soon ,come order with us your best ,test the difference</p>
-      <p>
-        <button>Explore Now</button>
-      </p>
-      <ul>
-      <li class="btn active"></li>
-      <li class="btn"></li>
-      <li class="btn"></li>
-      </ul>
-    </div>
-    <div class="imgs">
-      <img src="G.jpg">
-    </div>
-  </div>
-  </div>
-  <script type="text/javascript">
- const btn=documen.getElementsByClassName('btn');
-  banner=document.getElementById('banner');
-  btn[0]·onclick=function(){
-  }
-  banner.src='G.jpg';
-  animation()
-  this.classlist.add('active');
-  }
-  btn[1]·onclick=function(){
-  }
-  banner.src='H.jpg';
-  animation()
-  this.classlist.add('active');
-  }
-  btn[2]·onclick=function(){
-  }
-  banner.src='J.JPG';
-  animation()
-  this.classlist.add('active');
-  }
   
-  </script>
-  </body>
+  <nav>
+<ul>
+      <li> <a href="index.html">Home <i class="fa fa-home" aria-hidden="true"></i> </a></li>
+  <li><a href="gallery.html">
+  products  <i class="fas fa-shopping-cart"></i>
+  </a>
+   </li><li>
+      <a href="home.html">
+About us
+<i class="fas fa-address-card"></i>
+</a></li>
+ <li>
+  <a href="index.html">  orders  <i class="fas fa-cart-plus"></i> </a> </li>
+</ul></div>
+</font>
+  </nav>
+
+<div class="container">
+  <div class="heading">
+    <h3><font color="green">Photo</font><span><font color="purple">Gallery</font></span></h3>
+  </div>
+  <div class="box">
+    <div class="dream">
+    <img src="M.jpg">
+   <img src="L.jpg">
+    <img src="N.jpg">
+     <img src="O.jpg">
+    <img src="17.jpg">
+     <img src="c.jpg">  
+      <img src="H.jpg"> 
+      <img src="23.jpg">
+      <img src="22.jpg">
+    </div>
+     <div class="dream">
+       <img src="23.jpg">
+       <img src="f.jpg">
+       <img src="G.jpg">
+       <img src="H.jpg">
+       <img src="cake.jpg">
+       <img src="K.jpg">
+       <img src="L.jpg">
+       <img src="21.jpg">
+       <img src="23.jpg">
+     </div>
+      <div class="dream">
+        <img src="Q.jpg">
+        <img src="N.jpg">
+        <img src="21.jpg">
+        <img src="22.jpg">
+        <img src="10.jpg">
+        <img src="11.jpg">
+        <img src="12.jpg">
+      </div>
+</div>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Come to sweetcom bakery ,and feel the refreshment</p>
+    <div class="icons">
+         <font size="+3">  <i class=" fab fa-facebook"></i>
+   <i class="fab fa-twitter"></i>
+    <a href "https://flourencewangi.github.io/sweetcom-bakery/
+    "><i class="fas fa-globe"></i>
+  <i class="fab fa-instagram-square"></i> 
+    </font></div><br>
+    Made with<font color="red" size="+5"><i class="fas fa-heart"></i></font>
+    and greatness
+    </section>
+</body>
 
 </html>
