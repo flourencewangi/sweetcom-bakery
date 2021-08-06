@@ -143,11 +143,11 @@
     line-height: 22px;
     padding: 10px;
   }
-  .row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-  }
+        .row {
+          margin-top: 5%;
+          display: flex;
+          justify-content: space-between;
+    }
   .course-col{
     flex-basis: 31%;
     background: #fff3f3;
@@ -227,7 +227,7 @@
     border-radius: 10px;
   }
   .facilities-col p{
-    pmadding: 0;
+    padding: 0;
   }
   .facilities-col h3{
     margin-top: 16px;
@@ -248,6 +248,16 @@
     text-align: left;
     background: #fff3f3;
     padding: 25px;
+    cursor: pointer;
+    display: flex;
+  }
+  .testimonials-col {
+    flex-basis: 10%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: pink;
+    padding: 100px 50px;
     cursor: pointer;
     display: flex;
   }
